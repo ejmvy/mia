@@ -1,15 +1,19 @@
 <template>
-  <Header></Header>
+  <div>
+    <Header></Header>
+    <LandingPage></LandingPage>
+  </div>
 </template>
 
 <script>
 import Header from "./components/Header.vue";
-// import HelloWorld from "./components/HelloWorld.vue";
+import LandingPage from "./components/LandingPage.vue";
 
 export default {
   name: "App",
   components: {
-    Header
+    Header,
+    LandingPage
   }
 };
 </script>
@@ -68,5 +72,21 @@ button {
   letter-spacing: 3px;
   font-size: 14px;
   cursor: pointer;
+}
+
+section {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
 }
 </style>
