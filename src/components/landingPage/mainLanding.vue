@@ -1,4 +1,4 @@
- <template>
+<template>
   <section>
     <div class="landing">
       <div class="icon-scroll"></div>
@@ -7,7 +7,7 @@
           <div class="first">{{ first }}</div>
           <div class="last">{{ last }}</div>
         </div>
-        <h2>Acryllic Pour Artist</h2>
+        <h2 class="pourTitle">Acryllic Pour Artist</h2>
         <p>
           It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here,
           content here', making it look like readable English.
@@ -152,10 +152,10 @@
       </div>
     </div>
   </section>
-</template>  
+</template>
+
 
 <script>
-// import HexDesign from "./MainHex.vue";
 export default {
   data() {
     return {
@@ -165,6 +165,7 @@ export default {
   }
 };
 </script>
+
 
 <style scoped>
 .landing {
@@ -193,9 +194,10 @@ export default {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  font-size: 100px;
+  font-size: 90px;
   color: #663399;
-  font-family: "Roboto Slab", serif;
+  /* font-family: "Roboto Slab", serif; */
+  font-family: "Titan One", cursive;
 }
 
 .landing .miaHeader .name .last {
@@ -206,10 +208,11 @@ export default {
 .landing .miaHeader h2 {
   font-family: "Kodchasan", sans-serif;
   text-transform: uppercase;
-  font-size: 30px;
+  font-size: 25px;
 }
 
 .landing .miaHeader p {
+  font-weight: bold;
   padding-top: 20px;
 }
 
@@ -263,14 +266,6 @@ export default {
   font-family: sans-serif;
   list-style-type: none;
   padding-bottom: 50px;
-}
-
-#hexGrid2 {
-  padding: 80px 50px 130px 0;
-  width: 80%;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
 }
 
 .hex,
@@ -335,13 +330,13 @@ export default {
   opacity: 0;
 }
 
-.largeHex #back {
+/* .largeHex #back {
   opacity: 0;
 }
 
 .largeHex #front {
   opacity: 1;
-}
+} */
 
 .hex .last {
   opacity: 0;
@@ -504,5 +499,135 @@ export default {
     rgba(0, 0, 0, 0.5),
     transparent
   );
+}
+
+@media (max-height: 600px) {
+  .landing .miaHeader {
+    padding-left: 0;
+  }
+  .landing .miaHeader .name {
+    font-size: 50px;
+  }
+}
+
+@media (max-width: 700px) {
+  .landing .miaHeader .name {
+    font-size: 60px;
+  }
+
+  .landing .pourTitle {
+    font-size: 20px !important;
+  }
+
+  .landing {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+  }
+  .landing .miaHeader {
+    width: 80%;
+    -ms-flex-item-align: end;
+    align-self: flex-end;
+    margin-left: 0;
+    line-height: 2;
+  }
+  .landing .rightLandingSide {
+    display: none;
+  }
+  .threeHexes .hexImage {
+    width: 300px;
+  }
+  footer p {
+    font-size: 12px;
+  }
+  footer .social i {
+    margin: 0 10px;
+  }
+}
+
+@media (min-width: 1201px) {
+  /* <- 5-4  hexagons per row */
+  .hexGrid {
+    padding-bottom: 15%;
+  }
+  .hex {
+    width: 25%;
+  }
+  .largeHex {
+    width: 12.5%;
+  }
+  .hex:nth-child(7n + 5) {
+    /* first hexagon of even rows */
+    margin-left: 12.5%;
+    /* = width of .hex / 2  to indent even rows */
+  }
+  .largeHex:nth-child(15n + 9) {
+    /* first hexagon of even rows */
+    margin-left: 6.2%;
+  }
+}
+
+@media (max-width: 1200px) and (min-width: 901px) {
+  /* <- 4-3  hexagons per row */
+  .hexGrid {
+    padding-bottom: 15%;
+    font-size: 13px;
+  }
+  .hex {
+    width: 25%;
+    /* = 100 / 4 */
+  }
+  .hex:nth-child(7n + 5) {
+    /* first hexagon of even rows */
+    margin-left: 12.5%;
+    /* = width of .hex / 2  to indent even rows */
+  }
+}
+
+@media (max-width: 900px) and (min-width: 601px) {
+  /* <- 3-2  hexagons per row */
+  .hexGrid {
+    padding-bottom: 7.4%;
+    font-size: 14px;
+  }
+  .hex {
+    width: 33.333%;
+    /* = 100 / 3 */
+  }
+  .hex:nth-child(5n + 4) {
+    /* first hexagon of even rows */
+    margin-left: 16.666%;
+    /* = width of .hex / 2  to indent even rows */
+  }
+}
+
+@media (max-width: 600px) {
+  /* <- 2-1  hexagons per row */
+  .hexGrid {
+    padding-bottom: 11.2%;
+    font-size: 12px;
+  }
+  .hex {
+    width: 50%;
+    /* = 100 / 3 */
+  }
+  .hex:nth-child(3n + 3) {
+    /* first hexagon of even rows */
+    margin-left: 25%;
+    /* = width of .hex / 2  to indent even rows */
+  }
+}
+
+@media (max-width: 400px) {
+  .hexGrid {
+    font-size: 8px;
+  }
 }
 </style>
