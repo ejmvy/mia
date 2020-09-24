@@ -22,7 +22,25 @@
           <div class="titleLine"></div>
         </div>
 
-        <div class="icons"></div>
+        <div class="icons">
+          <div class="circleArea">
+            <div class="circle">
+              <img class="circleImg" src="/src/assets/instagram.png" />
+            </div>
+          </div>
+          <div class="circleArea">
+            <div class="circle">
+              <div class="circle">
+                <img class="circleImg" src="/src/assets/facebook.jpg" />
+              </div>
+            </div>
+          </div>
+          <div class="circleArea">
+            <div class="circle">
+              <img class="circleImg" src="/src/assets/shopify.png" />
+            </div>
+          </div>
+        </div>
       </div>
     </div>
   </section>
@@ -76,7 +94,7 @@
 }
 
 #aboutMia .socialSection {
-  width: 60%;
+  width: 80%;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -100,6 +118,55 @@
   height: 4px;
   border-radius: 5px;
   background: #30d5c8;
+}
+
+#aboutMia .socialSection .icons {
+  display: flex;
+  justify-content: space-around;
+  margin-bottom: 30px;
+  width: 80%;
+}
+
+#aboutMia .socialSection .icons .circleArea {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  padding: 30px 20px 0 20px;
+  text-align: center;
+}
+
+#aboutMia .socialSection .icons .circleArea .circle {
+  width: 60px;
+  height: 60px;
+  background: #30d5c8;
+  border-radius: 50%;
+  color: white;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+  cursor: pointer;
+}
+
+#aboutMia .socialSection .icons .circleArea .circle .circleImg {
+  position: relative;
+  top: 30%;
+  font-size: 50px;
+  z-index: 2;
 }
 
 @media (min-width: 1200px) {
