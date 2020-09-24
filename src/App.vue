@@ -1,19 +1,20 @@
 <template>
   <div>
     <Header></Header>
-    <LandingPage></LandingPage>
+    <router-view></router-view>
+    <Footer></Footer>
   </div>
 </template>
 
 <script>
 import Header from "./components/Header.vue";
-import LandingPage from "./LandingPage.vue";
+import Footer from "./components/landingPage/Footer.vue";
 
 export default {
   name: "App",
   components: {
     Header,
-    LandingPage
+    Footer
   }
 };
 </script>
@@ -62,11 +63,24 @@ p {
 }
 
 button {
-  text-transform: uppercase;
-  font-family: "Kodchasan", sans-serif;
-  letter-spacing: 3px;
-  font-size: 14px;
+  /* background: #7852a9 */
+  background: #a085c2;
+  padding: 15px 25px;
+  color: white;
+  border: none;
+  border-radius: 410px;
   cursor: pointer;
+  box-shadow: 0 2px 5px #ccc;
+  font-family: "Rubik", sans-serif;
+  letter-spacing: 1.3px;
+  -webkit-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+}
+
+button:hover {
+  background: #7852a9;
+  -webkit-transform: scale(1.1);
+  transform: scale(1.05);
 }
 
 section {
@@ -85,7 +99,7 @@ section {
   align-items: center;
 }
 
-@-webkit-keyframes underline {
+/* @-webkit-keyframes underline {
   0% {
     border-bottom: 3px solid transparent;
   }
@@ -101,7 +115,7 @@ section {
   100% {
     border-bottom: 3px solid white;
   }
-}
+} */
 
 @-webkit-keyframes appear {
   0% {

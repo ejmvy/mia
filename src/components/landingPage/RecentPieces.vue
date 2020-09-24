@@ -48,6 +48,10 @@
         </div>
       </div>-->
     </div>
+    <div class="commissionQ">
+      <h3>Have someone special you'd like to commission a piece for?</h3>
+      <button>More details</button>
+    </div>
   </section>
 </template>
 
@@ -81,7 +85,7 @@
 #recentSection .displayArtwork .artBox {
   -webkit-box-shadow: 0 5px 20px #ccc;
   box-shadow: 0 5px 20px #ccc;
-  border-radius: 20px;
+  border-radius: 10px;
   width: 300px;
   -webkit-transition: all 0.8s ease;
   transition: all 0.8s ease;
@@ -101,10 +105,16 @@
   width: 250px;
 }
 
+.commissionQ {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 50px 0;
+}
+
 @media (max-width: 700px) {
-  #recentSection {
-    padding: 0 20px;
-  }
   #recentSection .displayArtwork .artBox {
     width: 90%;
     height: 80%;

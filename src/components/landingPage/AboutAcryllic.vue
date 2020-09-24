@@ -9,6 +9,9 @@
             There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable. If you are going to use a passage of Lorem Ipsum,
             you need to be sure there isn't anything embarrassing hidden in the middle of text. All the Lorem Ipsum generators on the Internet tend to repeat predefined chunks as necessary, making this the first true generator on the Internet.
           </p>
+          <router-link to="/classes">
+            <button id="classesBtn">See our classes</button>
+          </router-link>
         </div>
       </div>
       <div class="animateUp bounceUp">
@@ -43,11 +46,8 @@
   -ms-flex-order: 0;
   order: 0;
   border-radius: 20px;
-  -webkit-box-shadow: 0px 7px 10px -1px rgba(121, 120, 120, 0.75);
-  box-shadow: 0px 7px 10px -1px rgba(121, 120, 120, 0.75);
   padding: 10px 30px;
   min-height: 250px;
-  background: #30d5c8;
   -webkit-box-flex: 1;
   -ms-flex: 1;
   flex: 1;
@@ -55,7 +55,7 @@
 }
 
 #aboutAcrillic .aboutAcrillicSection .aboutText p {
-  color: white;
+  color: rgb(73, 72, 72);
 }
 
 #aboutAcrillic .aboutAcrillicSection .threeHexes {
@@ -68,7 +68,7 @@
 }
 
 #aboutAcrillic .aboutAcrillicSection .threeHexes .hexImage {
-  max-height: 500px;
+  max-height: 450px;
 }
 
 @media (max-width: 1250px) {

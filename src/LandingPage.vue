@@ -6,7 +6,6 @@
     <RecentPieces></RecentPieces>
     <!-- <MainHexDesign></MainHexDesign> -->
     <AboutMia></AboutMia>
-    <Footer></Footer>
   </div>
 </template>  
 
@@ -17,15 +16,14 @@ import MidBlue from "./components/landingPage/MidBlue.vue";
 import RecentPieces from "./components/landingPage/RecentPieces.vue";
 // import MainHexDesign from "./components/landingPage/MainHexDesign.vue";
 import AboutMia from "./components/landingPage/AboutMia.vue";
-import Footer from "./components/landingPage/Footer.vue";
+
 export default {
   components: {
     MainLanding,
     AboutAcryllic,
     MidBlue,
     RecentPieces,
-    AboutMia,
-    Footer
+    AboutMia
   }
 };
 </script>

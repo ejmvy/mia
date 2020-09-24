@@ -24,20 +24,18 @@
 
         <div class="icons">
           <div class="circleArea">
-            <div class="circle">
-              <img class="circleImg" src="/src/assets/instagram.png" />
-            </div>
+            <div class="circle"></div>
           </div>
           <div class="circleArea">
             <div class="circle">
               <div class="circle">
-                <img class="circleImg" src="/src/assets/facebook.jpg" />
+                <!-- <img class="circleImg" src="https://i.ibb.co/j6SkYL4/facebook.jpg" /> -->
               </div>
             </div>
           </div>
           <div class="circleArea">
             <div class="circle">
-              <img class="circleImg" src="/src/assets/shopify.png" />
+              <!-- <img class="circleImg" src="../../assets/shopify.png" /> -->
             </div>
           </div>
         </div>
@@ -160,13 +158,22 @@
   -webkit-transition: all 0.2s ease-in-out;
   transition: all 0.2s ease-in-out;
   cursor: pointer;
+  transition: all 0.2s ease-in-out;
+}
+
+#aboutMia .socialSection .icons .circleArea .circle:hover {
+  background: #7852a9;
+  transform: scale(1.05);
 }
 
 #aboutMia .socialSection .icons .circleArea .circle .circleImg {
   position: relative;
   top: 30%;
+  width: 50px;
+  height: 50px;
   font-size: 50px;
   z-index: 2;
+  background: none;
 }
 
 @media (min-width: 1200px) {

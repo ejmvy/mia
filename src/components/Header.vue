@@ -1,19 +1,19 @@
 <template>
   <header>
     <div class="logo">
-      <a href="#">
+      <router-link to="/">
         <img id="logoPic" src="https://i.ibb.co/q7J3TBg/imageonline-co-whitebackgroundremoved.png" />
-      </a>
+      </router-link>
     </div>
     <nav>
       <li>
-        <a href="classes.html">Classes</a>
+        <router-link to="/classes">Classes</router-link>
       </li>
       <li>
-        <a href="commission.html">Commission</a>
+        <router-link to="/commission">Commission</router-link>
       </li>
       <li>
-        <a href="contact.html">Contact</a>
+        <router-link to="/contact">Contact</router-link>
       </li>
     </nav>
     <div class="hamburger hidden">
@@ -101,6 +101,8 @@ header nav li a {
 
 header nav li a:hover {
   color: white;
+  -webkit-animation: underline 1s 1 forwards;
+  animation: underline 1s 1 forwards;
 }
 
 #active {
@@ -110,6 +112,10 @@ header nav li a:hover {
 }
 
 #active a {
+  color: white;
+}
+
+a.router-link-active {
   color: white;
 }
 
@@ -298,6 +304,24 @@ header nav li a:hover {
   }
   .hamburger {
     display: inline;
+  }
+}
+
+@-webkit-keyframes underline {
+  0% {
+    border-bottom: 3px solid transparent;
+  }
+  100% {
+    border-bottom: 3px solid white;
+  }
+}
+
+@keyframes underline {
+  0% {
+    border-bottom: 3px solid transparent;
+  }
+  100% {
+    border-bottom: 3px solid white;
   }
 }
 </style>
