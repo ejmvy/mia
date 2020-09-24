@@ -254,4 +254,45 @@ section {
     margin-top: 200px;
   }
 }
+
+.icon-scroll,
+.icon-scroll:before {
+  position: absolute;
+  left: 50%;
+}
+
+.icon-scroll {
+  top: 90%;
+  width: 0;
+  height: 0;
+  border-left: 20px solid transparent;
+  border-right: 20px solid transparent;
+  border-top: 25px solid white;
+  opacity: 0;
+  -webkit-animation-name: appear, bounceUp;
+  animation-name: appear, bounceUp;
+  -webkit-animation-iteration-count: 1, infinite;
+  animation-iteration-count: 1, infinite;
+  -webkit-animation-duration: 0.5s, 5s;
+  animation-duration: 0.5s, 5s;
+  -webkit-animation-fill-mode: forwards, both;
+  animation-fill-mode: forwards, both;
+  -webkit-animation-delay: 1s;
+  animation-delay: 1s;
+}
+
+.icon-scroll:before {
+  content: "";
+  width: 0;
+  height: 0;
+  border-left: 20px solid transparent;
+  border-right: 20px solid transparent;
+  border-top: 25px solid #30d5c8;
+  margin-left: -20px;
+  bottom: 6px;
+  border-radius: 4px;
+  opacity: 1;
+}
+
+/* classes & commissions css */
 </style>

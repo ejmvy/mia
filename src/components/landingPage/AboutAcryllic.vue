@@ -3,12 +3,9 @@
     <div class="aboutAcrillicSection">
       <div class="animateUp bounceUp">
         <div class="aboutText">
-          <h1>Acryllic Pouring</h1>
-          <h3>Why Do We Like It?</h3>
-          <p>
-            There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable. If you are going to use a passage of Lorem Ipsum,
-            you need to be sure there isn't anything embarrassing hidden in the middle of text. All the Lorem Ipsum generators on the Internet tend to repeat predefined chunks as necessary, making this the first true generator on the Internet.
-          </p>
+          <h1>{{ firstTitle }}</h1>
+          <h3>{{ secondTitle }}</h3>
+          <p>{{ pageMessage }}</p>
           <router-link to="/classes">
             <button id="classesBtn">See our classes</button>
           </router-link>
@@ -22,6 +19,17 @@
     </div>
   </section>
 </template>
+
+<script>
+export default {
+  props: ["firstTitle", "secondTitle", "pageMessage", "pageImg"],
+  data() {
+    return {
+      landingImg: ""
+    };
+  }
+};
+</script>
 
 <style scoped>
 #aboutAcrillic {
