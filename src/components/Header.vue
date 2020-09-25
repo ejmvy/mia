@@ -1,5 +1,5 @@
 <template>
-  <header>
+  <div class="headerTop">
     <div class="logo">
       <router-link to="/">
         <img id="logoPic" src="https://i.ibb.co/q7J3TBg/imageonline-co-whitebackgroundremoved.png" />
@@ -8,12 +8,15 @@
     <nav>
       <li>
         <router-link to="/classes">Classes</router-link>
+        <div class="underline"></div>
       </li>
       <li>
         <router-link to="/commission">Commission</router-link>
+        <div class="underline"></div>
       </li>
       <li>
         <router-link to="/contact">Contact</router-link>
+        <div class="underline"></div>
       </li>
     </nav>
     <div class="hamburger hidden" @click="showNavMenu = !showNavMenu">
@@ -25,20 +28,20 @@
       </div>
       <div class="navLinks">
         <li>
-          <a href="classes.html">Classes</a>
+          <router-link to="/classes">Classes</router-link>
           <div class="underline"></div>
         </li>
         <li>
-          <a href="#">Commission</a>
+          <router-link to="/commission">Commission</router-link>
           <div class="underline"></div>
         </li>
         <li>
-          <a href="#">Contact</a>
+          <router-link to="/contact">Contact</router-link>
           <div class="underline"></div>
         </li>
       </div>
     </div>
-  </header>
+  </div>
 </template>
 
 <script>
@@ -58,8 +61,10 @@ export default {
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped>
-header {
+.headerTop {
   position: fixed;
+  top: 0;
+  left: 0;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -74,14 +79,14 @@ header {
   z-index: 6;
 }
 
-header #logoPic {
+.headerTop #logoPic {
   width: 100px;
   height: 50px;
   z-index: 5;
   margin-left: 30px;
 }
 
-header nav {
+.headerTop nav {
   position: absolute;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -90,7 +95,7 @@ header nav {
   right: 0;
 }
 
-header nav li {
+.headerTop nav li {
   list-style: none;
   margin: 0 15px;
   padding: 30px;
@@ -99,14 +104,14 @@ header nav li {
   letter-spacing: 3px;
 }
 
-header nav li a {
+.headerTop nav li a {
   z-index: 6;
   color: #663399;
   text-decoration: none;
   cursor: pointer;
 }
 
-header nav li a:hover {
+.headerTop nav li a:hover {
   color: white;
   -webkit-animation: underline 1s 1 forwards;
   animation: underline 1s 1 forwards;
@@ -225,8 +230,13 @@ a.router-link-active {
 .nav2 .navLinks li:hover a {
   color: #30d5c8;
 }
-
+/* 
 .nav2.expanded {
+  top: 0;
+  z-index: 2;
+} */
+
+.nav2 {
   top: 0;
   z-index: 2;
 }
@@ -306,7 +316,7 @@ a.router-link-active {
 }
 
 @media (max-width: 1000px) {
-  header nav {
+  .headerTop nav {
     display: none;
   }
   .hamburger {
@@ -329,6 +339,17 @@ a.router-link-active {
   }
   100% {
     border-bottom: 3px solid white;
+  }
+}
+
+@media (max-width: 500px) {
+  .headerTop #logoPic {
+    margin-left: 0 !important;
+  }
+
+  .nav2 .topNav #navLogo {
+    height: 80%;
+    padding: 10px;
   }
 }
 </style>

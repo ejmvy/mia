@@ -2,18 +2,19 @@
   <div>
     <Header></Header>
     <router-view></router-view>
-    <!-- <Footer></Footer> -->
+    <Footer></Footer>
   </div>
 </template>
 
 <script>
 import Header from "./components/Header.vue";
-// import Footer from "./components/landingPage/Footer.vue";
+import Footer from "./components/landingPage/Footer.vue";
 
 export default {
   name: "App",
   components: {
-    Header
+    Header,
+    Footer
   }
 };
 </script>
@@ -294,5 +295,10 @@ section {
   opacity: 1;
 }
 
+/* @media (max-width: 500px) {
+  h1 {
+    font-size: 25px !important;
+  }
+} */
 /* classes & commissions css */
 </style>

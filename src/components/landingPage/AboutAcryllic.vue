@@ -100,4 +100,18 @@ export default {
     margin-right: 0;
   }
 }
+
+@media (max-width: 500px) {
+  #aboutAcrillic .aboutAcrillicSection .threeHexes .hexImage {
+    max-height: 250px;
+  }
+
+  #aboutAcrillic .aboutAcrillicSection {
+    width: 90%;
+  }
+
+  #aboutAcrillic .aboutAcrillicSection .aboutText {
+    padding: 10px;
+  }
+}
 </style>

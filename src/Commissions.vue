@@ -8,7 +8,7 @@
 
     <div class="classTypes">
       <h2>Looking for that unique gift?</h2>
-      <div class="type commissionIntro reorder">
+      <div id="extraPadding" class="type commissionIntro reorder">
         <div class="typeTextArea">
           <h3>What we can do</h3>
           <p>
@@ -151,7 +151,12 @@ b {
 }
 
 .commissionIntro {
+  margin: 50px 0;
   border-bottom: 2px solid rgb(170, 167, 167);
+}
+
+.divider {
+  padding-top: 60px;
 }
 
 .classTypes h2 {
@@ -162,15 +167,21 @@ b {
 .classTypes .type {
   width: 80%;
   display: flex;
-  padding: 40px 50px;
-  /* justify-content: center;
-  align-items: center; */
+  padding: 30px 0;
+  justify-content: center;
+  align-items: center;
   /* margin: 0 auto; */
+}
+
+#extraPadding {
+  padding: 90px 0;
 }
 
 .classTypes .type .typeTextArea {
   display: flex;
   flex-direction: column;
+  align-items: center;
+  justify-content: center;
   padding: 0 15px;
   /* flex: 1; */
 }
@@ -249,6 +260,7 @@ b {
     justify-content: center;
     align-items: center;
     text-align: center;
+    justify-content: center;
   }
 
   .classTypes .type .canvasArea {
@@ -270,6 +282,53 @@ b {
   #timetableBtn {
     margin: 0 auto;
     margin-top: 30px;
+  }
+
+  .paddingLeft {
+    margin-left: 0;
+  }
+
+  .paddingRight {
+    margin-right: 0;
+  }
+}
+
+@media (max-width: 500px) {
+  .canvas {
+    margin: 0;
+  }
+
+  #classSvg {
+    width: 300px;
+    height: 200px;
+  }
+
+  #xsCanvas {
+    width: 20px;
+    height: 20px;
+  }
+
+  #smCanvas {
+    width: 30px;
+    height: 30px;
+  }
+
+  #mdCanvas {
+    width: 50px;
+    height: 50px;
+  }
+
+  #lgCanvas {
+    width: 70px;
+    height: 70px;
+  }
+  #canvasSvg {
+    width: 60px;
+    height: 60px;
+  }
+  #bigCanvas {
+    width: 100px;
+    height: 100px;
   }
 }
 </style>

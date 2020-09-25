@@ -84,7 +84,7 @@ p {
 }
 
 #timetableBtn {
-  width: 400px;
+  width: 300px;
 }
 
 .classTypes .type .typeTextArea .classSvgArea {

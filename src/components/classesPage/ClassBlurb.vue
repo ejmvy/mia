@@ -4,7 +4,7 @@
       <img id="fullimage" src="https://i.ibb.co/ngTkrny/acrylic-pouring.jpg" />
     </div>
     <div class="imageText">
-      <h3>Interested In A Class ?</h3>
+      <h3>Interested in a class ?</h3>
       <p>
         Contact Mia to see available dates and begin your journey for your
         next favorite hobby! There are many variations of passages of Lorem
@@ -51,5 +51,11 @@
 
 .classesPhoto .imageText p {
   color: #808080;
+}
+
+@media (max-width: 600px) {
+  .classesPhoto .imageText {
+    width: 60%;
+  }
 }
 </style>

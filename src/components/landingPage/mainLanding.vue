@@ -630,4 +630,11 @@ export default {
     font-size: 8px;
   }
 }
+
+@media (max-width: 500px) {
+  .first,
+  .last {
+    font-size: 50px !important;
+  }
+}
 </style>

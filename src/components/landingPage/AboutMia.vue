@@ -129,7 +129,7 @@
   background: #30d5c8;
 }
 
-#aboutMia .socialSection .icons {
+/* #aboutMia .socialSection .icons {
   display: flex;
   justify-content: space-around;
   margin-bottom: 30px;
@@ -185,7 +185,7 @@
   font-size: 50px;
   z-index: 2;
   background: none;
-}
+} */
 
 @media (min-width: 1200px) {
   #aboutMia .miaSection {

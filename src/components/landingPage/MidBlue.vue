@@ -42,7 +42,7 @@ export default {
 <style scoped>
 #midBlue {
   width: 100%;
-  padding-top: 50px;
+  padding: 50px 0;
   background: #333399;
 }
 
@@ -176,6 +176,12 @@ export default {
   #midBlue .extraDetails .circleArea .hiddenText {
     max-width: none;
     min-height: 50px;
+  }
+}
+
+@media (max-width: 500px) {
+  #midBlue .extraDetails {
+    width: 90%;
   }
 }
 </style>
