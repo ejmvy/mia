@@ -1,49 +1,49 @@
 <template>
   <section id="midBlue">
-    <div class="animateUp slideLeft">
+    <div v-if="showQuote" class="animateUp slideLeft">
       <div class="quote">
-        <h3>The world always seems brighter when you've just made something that wasn't there before.</h3>
+        <h3>{{ mainQuote }}</h3>
         <div class="quoteMarks">
           <i class="fas fa-quote-right"></i>
         </div>
       </div>
     </div>
-    <div class="processDetails">The Process</div>
+    <div class="processDetails">{{ title }}</div>
     <div class="extraDetails">
       <div class="circleArea">
         <div class="circle">
           <i class="fas fa-palette"></i>
         </div>
-        <p
-          class="hiddenText"
-        >Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.</p>
+        <p class="hiddenText">{{ text1 }}</p>
       </div>
       <div class="circleArea">
         <div class="circle">
           <font-awesome-icon icon="spinner" />
           <!-- <i class="fas fa-paint-brush"></i> -->
         </div>
-        <p
-          class="hiddenText"
-        >Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.</p>
+        <p class="hiddenText">{{ text2 }}</p>
       </div>
       <div class="circleArea">
         <div class="circle">
           <i class="fas fa-brush"></i>
         </div>
-        <p
-          class="hiddenText"
-        >Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.</p>
+        <p class="hiddenText">{{ text3 }}</p>
       </div>
     </div>
   </section>
 </template>
 
+<script>
+export default {
+  props: ["mainQuote", "title", "text1", "text2", "text3", "icons", "showQuote"]
+};
+</script>
+
 <style scoped>
 #midBlue {
   width: 100%;
   padding-top: 50px;
-  background: navy;
+  background: #333399;
 }
 
 #midBlue .quote {

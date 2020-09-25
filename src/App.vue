@@ -2,19 +2,18 @@
   <div>
     <Header></Header>
     <router-view></router-view>
-    <Footer></Footer>
+    <!-- <Footer></Footer> -->
   </div>
 </template>
 
 <script>
 import Header from "./components/Header.vue";
-import Footer from "./components/landingPage/Footer.vue";
+// import Footer from "./components/landingPage/Footer.vue";
 
 export default {
   name: "App",
   components: {
-    Header,
-    Footer
+    Header
   }
 };
 </script>
@@ -75,6 +74,7 @@ button {
   letter-spacing: 1.3px;
   -webkit-transition: all 0.2s ease-in-out;
   transition: all 0.2s ease-in-out;
+  margin-top: 20px;
 }
 
 button:hover {

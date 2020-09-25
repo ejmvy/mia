@@ -9,6 +9,7 @@
               There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable. If you are going to use a passage of Lorem Ipsum,
               you need to be sure there isn't anything embarrassing hidden in the middle of text. All the Lorem Ipsum generators on the Internet tend to repeat predefined chunks as necessary, making this the first true generator on the Internet.
             </p>
+            <button id="aboutBtn">Contact me!</button>
           </div>
         </div>
         <div class="miaPhoto">
@@ -47,7 +48,7 @@
 
 <style scoped>
 #aboutMia {
-  background: navy;
+  background: #333399;
   min-height: 500px;
   padding: 10px 0;
   width: 100%;
@@ -59,7 +60,7 @@
 }
 
 #aboutMia .miaSection {
-  width: 100%;
+  width: 90%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -89,6 +90,16 @@
   border-radius: 50%;
   height: 400px;
   width: 400px;
+}
+
+#aboutBtn {
+  margin-top: 50px;
+  box-shadow: none;
+  background: #26aa9f;
+}
+
+#aboutBtn:hover {
+  background: #30d5c8;
 }
 
 #aboutMia .socialSection {
@@ -192,6 +203,7 @@
     -ms-flex-pack: center;
     justify-content: center;
     width: 100%;
+    text-align: center;
   }
   #aboutMia .miaSection .miaText {
     left: 0%;

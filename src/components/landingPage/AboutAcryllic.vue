@@ -13,7 +13,7 @@
       </div>
       <div class="animateUp bounceUp">
         <div class="threeHexes">
-          <img class="hexImage" src="https://i.ibb.co/q9cjMTT/imageedit-24-7966020525.png" />
+          <img class="hexImage" :src="pageImg" />
         </div>
       </div>
     </div>
@@ -25,7 +25,7 @@ export default {
   props: ["firstTitle", "secondTitle", "pageMessage", "pageImg"],
   data() {
     return {
-      landingImg: ""
+      // landingImg: "https://i.ibb.co/q9cjMTT/imageedit-24-7966020525.png"
     };
   }
 };

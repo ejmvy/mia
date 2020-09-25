@@ -1,59 +1,31 @@
 <template>
   <section id="recentSection">
-    <h1 class="recentHeading">Recent Pieces</h1>
+    <h2 class="recentHeading">{{ recentTitle }}</h2>
     <div class="displayArtwork">
-      <div class="animateUp bounceUp">
-        <div class="artBox">
-          <img class="artwork" src="https://i.ibb.co/yB8PpLM/gifgit-1.png" />
+      <div v-for="img in imagesToDisplay" :key="img">
+        <div class="artBox" :class="{smallBox : !showBtn}">
+          <img class="artwork" :src="img" />
         </div>
       </div>
-      <div class="animateUp bounceUp">
-        <div class="artBox">
-          <img class="artwork" src="https://i.ibb.co/yB8PpLM/gifgit-1.png" />
-        </div>
-      </div>
-      <div class="animateUp bounceUp">
-        <div class="artBox">
-          <img class="artwork" src="https://i.ibb.co/yB8PpLM/gifgit-1.png" />
-        </div>
-      </div>
-      <div class="animateUp bounceUp">
-        <div class="artBox">
-          <img class="artwork" src="https://i.ibb.co/yB8PpLM/gifgit-1.png" />
-        </div>
-      </div>
-      <div class="animateUp bounceUp">
-        <div class="artBox">
-          <img class="artwork" src="https://i.ibb.co/yB8PpLM/gifgit-1.png" />
-        </div>
-      </div>
-      <div class="animateUp bounceUp">
-        <div class="artBox">
-          <img class="artwork" src="https://i.ibb.co/yB8PpLM/gifgit-1.png" />
-        </div>
-      </div>
-      <div class="animateUp bounceUp">
-        <div class="artBox">
-          <img class="artwork" src="https://i.ibb.co/yB8PpLM/gifgit-1.png" />
-        </div>
-      </div>
-      <!-- <div class="animateUp bounceUp">
-        <div class="artBox">
-          <img class="artwork" src="https://i.ibb.co/yB8PpLM/gifgit-1.png" />
-        </div>
-      </div>
-      <div class="animateUp bounceUp">
-        <div class="artBox">
-          <img class="artwork" src="https://i.ibb.co/yB8PpLM/gifgit-1.png" />
-        </div>
-      </div>-->
     </div>
-    <div class="commissionQ">
-      <h3>Have someone special you'd like to commission a piece for?</h3>
-      <button>More details</button>
+    <div v-if="showBtn" class="commissionQ">
+      <h3>{{ questionText }}</h3>
+      <button>{{ btnText }}</button>
     </div>
   </section>
 </template>
+
+<script>
+export default {
+  props: [
+    "recentTitle",
+    "imagesToDisplay",
+    "questionText",
+    "btnText",
+    "showBtn"
+  ]
+};
+</script>
 
 <style scoped>
 #recentSection {
@@ -77,7 +49,7 @@
   -webkit-box-pack: center;
   -ms-flex-pack: center;
   justify-content: center;
-  width: 100%;
+  width: 70%;
   -ms-flex-wrap: wrap;
   flex-wrap: wrap;
 }
@@ -101,7 +73,7 @@
   transform: scale(1.01);
 }
 
-#recentSection .displayArtwork #smallBox {
+#recentSection .displayArtwork .smallBox {
   width: 250px;
 }
 

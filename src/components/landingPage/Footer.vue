@@ -1,31 +1,37 @@
 <template>
-  <footer>
-    <div class="footerPadding">
-      <p class="copyright">Copyright @ Mia McVey 2020</p>
-      <div class="developed">
-        <p>Developed By</p>
-        <p class="white">EJ</p>
+  <div class="footerArea">
+    <footer>
+      <div class="footerPadding">
+        <p class="copyright">Copyright @ Mia McVey 2020</p>
+        <div class="developed">
+          <p>Developed By</p>
+          <p class="white">EJ</p>
+        </div>
       </div>
-    </div>
-  </footer>
+    </footer>
+  </div>
 </template>
 
 
 <style scoped>
+.footerArea {
+  width: 100%;
+}
 footer {
+  background: #333399;
   /* margin: -5px 10px -10px 10px; */
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  color: navy;
-  width: 100%;
-  font-size: 15px;
-  margin: 5px;
+  color: white;
+
+  padding: 5px 10px;
   /* height: 40px !important; */
 }
 
 footer p {
   margin: 0 !important;
+  font-size: 13px !important;
 }
 
 footer .footerPadding {
@@ -37,9 +43,9 @@ footer .footerPadding {
   padding: 0 10px;
 }
 
-footer .copyright {
-  color: navy;
-}
+/* footer .copyright {
+  /* color: navy; 
+} */
 
 footer .social {
   display: -webkit-box;
@@ -52,10 +58,10 @@ footer .social i {
   font-size: 30px;
   margin: 0 30px;
 }
-
+/* 
 footer .social i:hover {
   color: white;
-}
+} */
 
 footer .developed {
   display: -webkit-box;
@@ -63,12 +69,12 @@ footer .developed {
   display: flex;
 }
 
-footer .developed p {
-  color: navy;
-}
+/* footer .developed p {
+  color: white;
+} */
 
 footer .developed .white {
-  color: white;
+  color: #64c7cc;
   font-weight: bold;
   padding-left: 12px;
   letter-spacing: 4px;

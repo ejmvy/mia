@@ -16,10 +16,10 @@
         <router-link to="/contact">Contact</router-link>
       </li>
     </nav>
-    <div class="hamburger hidden">
+    <div class="hamburger hidden" @click="showNavMenu = !showNavMenu">
       <div class="hamburger-bar"></div>
     </div>
-    <div class="nav2">
+    <div v-if="showNavMenu" class="nav2">
       <div class="topNav">
         <img id="navLogo" src="https://i.ibb.co/rdSwqJb/output-onlinepngtools-1.png" />
       </div>
@@ -43,8 +43,15 @@
 
 <script>
 export default {
-  props: {
-    msg: String
+  data() {
+    return {
+      showNavMenu: false
+    };
+  },
+  methods: {
+    showNav2() {
+      console.log("nav 2 clicked");
+    }
   }
 };
 </script>

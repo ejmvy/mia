@@ -33,6 +33,9 @@ export default {
 </script>
 
 <style scoped>
+p {
+  color: #f2f2f2;
+}
 .classesLanding {
   display: -webkit-box;
   display: -ms-flexbox;
