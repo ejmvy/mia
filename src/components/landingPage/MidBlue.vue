@@ -89,7 +89,7 @@ export default {
 }
 
 #midBlue .extraDetails {
-  width: 60%;
+  width: 80%;
   margin-top: 10px;
   display: -webkit-box;
   display: -ms-flexbox;

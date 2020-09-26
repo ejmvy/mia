@@ -91,7 +91,7 @@
         </div>
       </div>
 
-      <div class="type line">
+      <div id="bottomSect" class="type line">
         <div class="canvasArea">
           <img id="bigCanvas" class="canvas" src="./assets/canNoBG.png" />
         </div>
@@ -110,6 +110,26 @@
         </div>
       </div>
     </div>
+
+    <div class="commissionPieceArea">
+      <div v-for="piece in commissionPieces" :key="piece">
+        <img class="commissionPieceArt" :src="piece" />
+      </div>
+    </div>
+
+    <div class="commissionContact">
+      <div class="commissionText">
+        <h2>Have something in mind ?</h2>
+        <h4>Contact Mia with your specifications and lets create that perfect gift !</h4>
+        <p>
+          It will take approw 1 week to be made, polished and packed. Then we can either post it or it will be ready for collection. There are many variations of passages of Lorem
+          Ipsum available, but the majority have suffered alteration in some
+          form, by injected humour, or randomised words which don't look even
+          slightly believable.
+        </p>
+        <button>Contact Mia</button>
+      </div>
+    </div>
   </div>
 </template>
 
@@ -123,7 +143,13 @@ export default {
         subTitle: "For Someone Special.",
         pageMessage:
           "There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable. If you are going to use a passage of Lorem Ipsum, you need to be sure there isn't anything embarrassing hidden."
-      }
+      },
+      commissionPieces: [
+        "https://i.ibb.co/yB8PpLM/gifgit-1.png",
+        "https://i.ibb.co/yB8PpLM/gifgit-1.png",
+        "https://i.ibb.co/yB8PpLM/gifgit-1.png",
+        "https://i.ibb.co/yB8PpLM/gifgit-1.png"
+      ]
     };
   },
   components: {
@@ -140,14 +166,30 @@ p {
 b {
   color: black;
 }
-.classTypes {
+.classTypes,
+.commissionContact {
   background: #f2f2f2;
   width: 100%;
   display: flex;
   flex-direction: column;
-  padding-top: 30px;
+  padding: 60px 0;
   justify-content: center;
   align-items: center;
+}
+
+.commissionContact {
+  padding-top: 60px;
+}
+
+.commissionContact .commissionText {
+  text-align: center;
+  width: 60%;
+  margin-bottom: 40px;
+}
+
+.commissionContact .commissionText h4,
+.commissionContact .commissionText p {
+  margin: 50px 0;
 }
 
 .commissionIntro {
@@ -252,6 +294,23 @@ b {
 #lgCanvas {
   width: 100px;
   height: 100px;
+}
+
+#bottomSect {
+  padding-bottom: 100px;
+}
+
+.commissionPieceArea {
+  background: #333399;
+  width: 100%;
+  display: flex !important;
+  justify-content: space-around;
+  padding: 20px 0;
+}
+
+.commissionPieceArea .commissionPieceArt {
+  width: 200px;
+  height: 200px;
 }
 
 @media (max-width: 900px) {
