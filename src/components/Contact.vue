@@ -69,7 +69,10 @@ export default {
 
 .contactSection .mailContactArea {
   width: 60%;
-  margin-top: 50px;
+  margin-top: 40px;
+  background: rgba(236, 240, 240, 0.2);
+  padding: 0 20px;
+  padding-bottom: 30px;
 }
 
 .contactSection .mailContactArea .mailContact {
@@ -85,7 +88,7 @@ export default {
   border: none;
   height: 20px;
   padding: 15px;
-  margin: 30px 0;
+  margin: 20px 0;
   border-bottom: 3px solid #663399;
   font-size: 18px;
   color: #663399;
@@ -93,11 +96,11 @@ export default {
 }
 
 .selectBox {
-  margin-top: 30px;
+  /* margin-top: 10px; */
   border: none;
   border-bottom: 3px solid #663399;
   padding: 30px 10px;
-  background: #30d5c8;
+  background: none;
   font-size: 18px;
   /* color: gray; */
   color: #663399;
@@ -107,9 +110,6 @@ export default {
   outline: none;
 }
 
-.selected {
-}
-
 .contactSection .mailContactArea .mailContact #inputMessage {
   height: 100px;
 }
@@ -117,6 +117,7 @@ export default {
 .contactSection .mailContactArea .mailContact input:focus,
 .contactSection .mailContactArea .mailContact textarea:focus {
   outline: none;
+  color: white;
   border-bottom: 3px solid white;
 }
 
@@ -125,7 +126,8 @@ export default {
   margin-top: 30px;
   background: none;
   border: 3px solid #663399;
-  color: #663399;
+  color: #663399 !important;
+  font-weight: bold;
   border-radius: 25px;
   width: 160px;
   height: 50px;
@@ -134,10 +136,16 @@ export default {
   transition: all 0.2s ease;
   align-self: center;
   box-shadow: none;
+  text-transform: uppercase;
+  font-family: "Kodchasan", sans-serif;
+}
+
+textarea {
+  font-family: "Rubik", sans-serif;
 }
 
 .contactSection .mailContactArea .mailContact #contactButton:hover {
-  color: white;
+  color: white !important;
   background: #663399;
 }
 

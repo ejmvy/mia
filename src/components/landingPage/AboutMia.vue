@@ -10,7 +10,9 @@
               <br />
               <br />Spending hours daily exploring what information there was about it online and found one place that was teaching a handful of the techniques. After learning the basics I began to explore the medium further, creating new and unique techniques as time went on. Diving headfirst down the rabbit hole of this mesmerizing medium, I have now set up classes on Acrylic Pouring in Dublin city centre in Block T Studios.
             </p>
-            <button id="aboutBtn">Contact me!</button>
+            <router-link to="/contact">
+              <button id="aboutBtn">Contact me!</button>
+            </router-link>
           </div>
         </div>
         <div class="miaPhoto">

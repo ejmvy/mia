@@ -1,22 +1,22 @@
 <template>
   <div class="headerTop">
     <div class="logo">
-      <router-link to="/">
+      <router-link to="/" id="homeLink">
         <img id="logoPic" src="https://i.ibb.co/q7J3TBg/imageonline-co-whitebackgroundremoved.png" />
       </router-link>
     </div>
     <nav>
       <li>
         <router-link to="/classes">Classes</router-link>
-        <div class="underline"></div>
+        <!-- <div class="underline"></div> -->
       </li>
       <li>
         <router-link to="/commission">Commission</router-link>
-        <div class="underline"></div>
+        <!-- <div class="underline"></div> -->
       </li>
       <li>
         <router-link to="/contact">Contact</router-link>
-        <div class="underline"></div>
+        <!-- <div class="underline"></div> -->
       </li>
     </nav>
     <div class="hamburger hidden" @click="showNavMenu = !showNavMenu">
@@ -109,6 +109,7 @@ export default {
   color: #663399;
   text-decoration: none;
   cursor: pointer;
+  padding-bottom: 30px;
 }
 
 .headerTop nav li a:hover {
@@ -117,18 +118,17 @@ export default {
   animation: underline 1s 1 forwards;
 }
 
-#active {
-  border-bottom: 3px solid transparent;
-  -webkit-animation: underline 1s 1 forwards;
-  animation: underline 1s 1 forwards;
-}
-
-#active a {
+a:active {
   color: white;
 }
 
-a.router-link-active {
-  color: white;
+a.active {
+  color: white !important;
+  border-bottom: 2px solid white;
+}
+
+#homeLink.active {
+  border-bottom: none;
 }
 
 .nav2 {
@@ -196,6 +196,7 @@ a.router-link-active {
   flex-direction: column;
   margin: 15px 0;
   letter-spacing: 5px;
+  /* padding-bottom: 30px; */
 }
 
 .nav2 .navLinks li a {
@@ -326,19 +327,19 @@ a.router-link-active {
 
 @-webkit-keyframes underline {
   0% {
-    border-bottom: 3px solid transparent;
+    border-bottom: 2px solid transparent;
   }
   100% {
-    border-bottom: 3px solid white;
+    border-bottom: 2px solid white;
   }
 }
 
 @keyframes underline {
   0% {
-    border-bottom: 3px solid transparent;
+    border-bottom: 2px solid transparent;
   }
   100% {
-    border-bottom: 3px solid white;
+    border-bottom: 2px solid white;
   }
 }
 

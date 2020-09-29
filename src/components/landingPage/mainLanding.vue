@@ -170,6 +170,8 @@ export default {
 
 <style scoped>
 .landing {
+  background: #30d5c8;
+  /* background: #3cc2b7; */
   width: 100%;
   min-height: 100vh;
   position: relative;
@@ -232,6 +234,7 @@ export default {
   justify-content: space-between;
   position: absolute;
   right: 0;
+  z-index: 2;
 }
 
 .landing .rightLandingSide .paintDrops {

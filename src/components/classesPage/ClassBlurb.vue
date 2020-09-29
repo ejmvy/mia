@@ -12,7 +12,9 @@
         form, by injected humour, or randomised words which don't look even
         slightly believable.
       </p>
-      <button>Contact me for details</button>
+      <router-link to="/contact" id="routerStyle">
+        <button>Contact me for details</button>
+      </router-link>
     </div>
   </section>
 </template>

@@ -21,7 +21,7 @@ export default {
 
 <style>
 body {
-  background: #30d5c8;
+  background: #f2f2f2;
   /* font-family: "Kodchasan", sans-serif; */
   font-family: "Rubik", sans-serif;
   margin: 0;
@@ -66,7 +66,7 @@ button {
   /* background: #7852a9 */
   background: #a085c2;
   padding: 15px 25px;
-  color: white;
+  color: white !important;
   border: none;
   border-radius: 410px;
   cursor: pointer;
@@ -82,6 +82,11 @@ button:hover {
   background: #7852a9;
   -webkit-transform: scale(1.1);
   transform: scale(1.05);
+}
+
+#routerStyle {
+  color: white;
+  text-decoration: none;
 }
 
 section {

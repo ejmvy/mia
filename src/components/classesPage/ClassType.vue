@@ -42,7 +42,10 @@
           <br />23/11/2020 - 04/01/2021 &nbsp; Every Monday 18:00 - 20:00
           <br />25/11/2020 - 06/01/2021 &nbsp; Every Wednesday 18:00 - 20:00
         </p>
-        <button id="timetableBtn">Contact me for class enquiries</button>
+
+        <router-link to="/contact" id="routerStyle">
+          <button id="timetableBtn">Contact me for class enquiries</button>
+        </router-link>
       </div>
       <div class="classSvgArea">
         <img id="classSvg" src="../../assets/week.svg" />

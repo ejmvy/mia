@@ -49,6 +49,7 @@ p {
   width: 100%;
   position: relative;
   min-height: 100vh;
+  background: #30d5c8;
 }
 
 .classesLanding .headingText {

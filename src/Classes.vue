@@ -6,13 +6,6 @@
       :landingMsg="landing.pageMessage"
     ></NavLanding>
 
-    <!-- <AboutAcryllic
-      :firstTitle="about.aboutTitle"
-      :secondTitle="about.aboutSubtitle"
-      :pageMessage="about.aboutParagraph"
-      :pageImg="about.aboutImg"
-    ></AboutAcryllic>-->
-
     <ClassType></ClassType>
 
     <MidBlue

@@ -9,6 +9,7 @@ const router = createRouter({
     // scrollBehavior() {
     //     return { x: 0, y: 0 }
     // }
+    linkActiveClass: 'active',
     scrollBehavior() {
         document.getElementById('app').scrollIntoView();
     }

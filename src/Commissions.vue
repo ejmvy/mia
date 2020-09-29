@@ -129,7 +129,10 @@
           form, by injected humour, or randomised words which don't look even
           slightly believable.
         </p>
-        <button>Contact Mia</button>
+
+        <router-link to="/contact" id="routerStyle">
+          <button>Contact Mia</button>
+        </router-link>
       </div>
     </div>
   </div>
@@ -168,6 +171,7 @@ p {
 b {
   color: black;
 }
+
 .classTypes,
 .commissionContact {
   background: #f2f2f2;
