@@ -6,8 +6,9 @@
           <div class="miaText">
             <h1>About Mia</h1>
             <p>
-              There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable. If you are going to use a passage of Lorem Ipsum,
-              you need to be sure there isn't anything embarrassing hidden in the middle of text. All the Lorem Ipsum generators on the Internet tend to repeat predefined chunks as necessary, making this the first true generator on the Internet.
+              Growing up in Ireland and spending nearly every summer by the sea definitely cultivated an affinity for the ocean and nature. Having studied art in school and been entranced by the subject matter, throughout my twenties I started spending more and more time appreciating, tidying and creating art. Several years ago I began seeing these incredible pieces of art online that fell under the ‘Acrylic Pouring’ or ‘Resin Art’ categories.
+              <br />
+              <br />Spending hours daily exploring what information there was about it online and found one place that was teaching a handful of the techniques. After learning the basics I began to explore the medium further, creating new and unique techniques as time went on. Diving headfirst down the rabbit hole of this mesmerizing medium, I have now set up classes on Acrylic Pouring in Dublin city centre in Block T Studios.
             </p>
             <button id="aboutBtn">Contact me!</button>
           </div>

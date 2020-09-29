@@ -184,4 +184,10 @@ export default {
     width: 90%;
   }
 }
+
+@media (min-width: 1500px) {
+  #midBlue .extraDetails {
+    width: 60%;
+  }
+}
 </style>

@@ -5,6 +5,7 @@
       :firstTitle="about.aboutTitle"
       :secondTitle="about.aboutSubtitle"
       :pageMessage="about.aboutParagraph"
+      :message2="about.aboutParagraph2"
       :pageImg="about.aboutImg"
     ></AboutAcryllic>
     <MidBlue
@@ -43,7 +44,9 @@ export default {
         aboutTitle: "Acryllic Pouring",
         aboutSubtitle: "Why Do We Like It?",
         aboutParagraph:
-          "There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable. If you are going to use a passage of Lorem Ipsum, you need to be sure there isn't anything embarrassing hidden in the middle of text. All the Lorem Ipsum generators on the Internet tend to repeat predefined chunks as necessary, making this the first true generator on the Internet.",
+          "Acryllic Pouring is relatively new as a medium to work with, but has recently exploded in popularity. The art form itself is incredibly calming and even hypnotic at times, and more enjoyably - it's not a terribly difficult technique to learn. There are some challenges in getting the preparation right, mixing the paints with the chemicals and getting precisely the same consistency and fluidity across all your colours however the paint process is nothing but enjoyable! Learning these techniques takes a little bit of time but with a bit of patience and interest, should yield some very satisfying results!",
+        aboutParagraph2:
+          "Therapeutic and soothing are two words that are inextricably linked with this amazing art form.",
         aboutImg: "https://i.ibb.co/q9cjMTT/imageedit-24-7966020525.png"
       },
       midBlue: {

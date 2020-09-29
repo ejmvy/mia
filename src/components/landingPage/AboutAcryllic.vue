@@ -5,7 +5,12 @@
         <div class="aboutText">
           <h1>{{ firstTitle }}</h1>
           <h3>{{ secondTitle }}</h3>
-          <p>{{ pageMessage }}</p>
+          <p>
+            {{ pageMessage }}
+            <br />
+            <br />
+            {{ message2 }}
+          </p>
           <router-link to="/classes">
             <button id="classesBtn">See our classes</button>
           </router-link>
@@ -22,7 +27,7 @@
 
 <script>
 export default {
-  props: ["firstTitle", "secondTitle", "pageMessage", "pageImg"],
+  props: ["firstTitle", "secondTitle", "pageMessage", "message2", "pageImg"],
   data() {
     return {
       // landingImg: "https://i.ibb.co/q9cjMTT/imageedit-24-7966020525.png"

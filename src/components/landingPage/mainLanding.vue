@@ -9,8 +9,9 @@
         </div>
         <h2 class="pourTitle">Acryllic Pour Artist</h2>
         <p>
-          It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here,
-          content here', making it look like readable English.
+          An Acryllic Pour Artist born and based in Dublin. Having been very art focused for much of her youth, Mia started working with acryllic paints in 2015 after becoming intrigued by techniques used in 'Acryllic Pouring' or 'Resin Art'. After attending some 'Resin Art' classes some years ago she began to explore the medium further, creating new and unique techniques as time went on.
+          <br />
+          <br />Mia now spends her time in her sudio in Block K, Dublin, creating her artwork and also giving classes for interested learners.
         </p>
       </div>
       <div class="rightLandingSide">

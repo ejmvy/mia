@@ -62,13 +62,15 @@
           <p>
             There are many variations of parem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable.
             <br />
-            <b>Square:</b> 25cm,&nbsp; 40cm,&nbsp; 55cm
+            <b>Square:</b> 20cm,&nbsp; 30cm,&nbsp; 40cm
             <br />
-            <b>Circle:</b> 30cm,&nbsp; 50cm,&nbsp; 60cm
+            <b>Circle:</b> 20cm, &nbsp; 25cm,&nbsp; 30cm, &nbsp; 40cm,&nbsp; 50cm
             <br />
-            <b>Hexagon:</b> 45cm,&nbsp; 85cm
+            <b>Hexagon:</b> 30cm,&nbsp; 40cm
             <br />
-            <b>Rectangle:</b> 25x15cm,&nbsp; 45x30cm,&nbsp; 80x65cm
+            <b>Oval:</b> 15x20cm,&nbsp; 20x25cm
+            <br />
+            <b>Rectangle:</b> 30x100cm
           </p>
         </div>
         <div class="canvasArea">
