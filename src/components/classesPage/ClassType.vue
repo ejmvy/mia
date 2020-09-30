@@ -12,13 +12,13 @@
         </p>
       </div>
       <div class="classSvgArea">
-        <img id="classSvg" src="../../assets/draw.svg" />
+        <img id="classSvg" src="../../assets/svg/draw.svg" />
       </div>
     </div>
 
     <div class="type line">
       <div class="classSvgArea">
-        <img id="classSvg" src="../../assets/fullDay.svg" />
+        <img id="classSvg" src="../../assets/svg/fullDay.svg" />
       </div>
       <div class="typeTextArea">
         <h3>Full Day Class</h3>
@@ -48,7 +48,7 @@
         </router-link>
       </div>
       <div class="classSvgArea">
-        <img id="classSvg" src="../../assets/week.svg" />
+        <img id="classSvg" src="../../assets/svg/week.svg" />
       </div>
     </div>
   </section>

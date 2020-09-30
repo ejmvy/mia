@@ -46,6 +46,12 @@ export default {
 
 
 <style scoped>
+.logoImg {
+  background: none;
+  width: 50px;
+  height: 50px;
+  /* padding: 10px 100px; */
+}
 .contactSection {
   background: #30d5c8;
   padding-top: 120px;
@@ -88,7 +94,7 @@ export default {
   border: none;
   height: 20px;
   padding: 15px;
-  margin: 20px 0;
+  margin: 20px 30px;
   border-bottom: 3px solid #663399;
   font-size: 18px;
   color: #663399;
@@ -100,6 +106,7 @@ export default {
   border: none;
   border-bottom: 3px solid #663399;
   padding: 30px 10px;
+  margin: 0 30px;
   background: none;
   font-size: 18px;
   /* color: gray; */

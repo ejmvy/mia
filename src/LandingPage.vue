@@ -64,6 +64,25 @@ export default {
       },
       recent: {
         title: "Recent Pieces",
+        // images: [
+        //   "hex2.png",
+        //   "blue1.png",
+        //   "circle4.png",
+        //   "rect1.png",
+        //   "circle2.png",
+        //   "rect1.png",
+        //   "hex1.png"
+        // ],
+        // images: [
+        //   "./assets/mainShots/hex2.png",
+        //   "./assets/mainShots/blue1.png",
+        //   "./assets/mainShots/circle4.png",
+        //   "./assets/mainShots/rect1.png",
+        //   "./assets/mainShots/circle2.png",
+        //   "./assets/mainShots/rect1.png",
+        //   "./assets/mainShots/hex1.png",
+        //   "https://i.ibb.co/yB8PpLM/gifgit-1.png"
+        // ],
         images: [
           "https://i.ibb.co/yB8PpLM/gifgit-1.png",
           "https://i.ibb.co/yB8PpLM/gifgit-1.png",

@@ -3,19 +3,25 @@
     <div class="footerArea">
       <div class="icons">
         <div class="circleArea">
-          <div class="circle"></div>
-        </div>
-        <div class="circleArea">
-          <div class="circle">
+          <a href="https://www.ejmcvey.com" target="_blank">
             <div class="circle">
-              <!-- <img class="circleImg" src="https://i.ibb.co/j6SkYL4/facebook.jpg" /> -->
+              <img class="circleImg" src="../../assets/logos/instaLogo.png" />
             </div>
-          </div>
+          </a>
         </div>
         <div class="circleArea">
-          <div class="circle">
-            <!-- <img class="circleImg" src="../../assets/shopify.png" /> -->
-          </div>
+          <a href="https://www.ejmcvey.com" target="_blank">
+            <div class="circle">
+              <img class="circleImg" src="../../assets/logos/etsy2.png" />
+            </div>
+          </a>
+        </div>
+        <div class="circleArea">
+          <a href="https://www.ejmcvey.com" target="_blank">
+            <div class="circle">
+              <img class="circleImg" src="../../assets/logos/fb-f.png" />
+            </div>
+          </a>
         </div>
       </div>
 
@@ -99,7 +105,7 @@ footer .footerArea .icons .circleArea .circle:hover {
 
 footer .footerArea .icons .circleArea .circle .circleImg {
   position: relative;
-  /* top: 30%; */
+  top: 20%;
   width: 30px;
   height: 30px;
   font-size: 50px;

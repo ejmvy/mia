@@ -12,20 +12,20 @@
     <div class="extraDetails">
       <div class="circleArea">
         <div class="circle">
-          <i class="fas fa-palette"></i>
+          <!-- <i class="fas fa-palette"></i> -->
+          <img class="processImg" src="../../assets/palette.png" />
         </div>
         <p class="hiddenText">{{ text1 }}</p>
       </div>
       <div class="circleArea">
         <div class="circle">
-          <font-awesome-icon icon="spinner" />
-          <!-- <i class="fas fa-paint-brush"></i> -->
+          <img class="processImg" src="../../assets/paint-brush.png" />
         </div>
         <p class="hiddenText">{{ text2 }}</p>
       </div>
       <div class="circleArea">
         <div class="circle">
-          <i class="fas fa-brush"></i>
+          <img class="processImg" src="../../assets/brush.png" />
         </div>
         <p class="hiddenText">{{ text3 }}</p>
       </div>
@@ -141,22 +141,20 @@ export default {
   transition: all 0.2s ease-in-out;
 }
 
-#midBlue .extraDetails .circle i {
+#midBlue .extraDetails .circle .processImg {
   position: relative;
-  top: 30%;
+  top: 25%;
   font-size: 50px;
   z-index: 2;
+  width: 60px;
+  height: 60px;
 }
 
 #midBlue .extraDetails .circle:hover {
   cursor: pointer;
-  background: white;
-  -webkit-transform: scale(1.1);
-  transform: scale(1.1);
-}
-
-#midBlue .extraDetails .circle:hover i {
-  color: #30d5c8;
+  /* background: white; */
+  -webkit-transform: scale(1.05);
+  transform: scale(1.05);
 }
 
 @media (max-width: 1000px) {

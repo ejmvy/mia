@@ -18,7 +18,7 @@
           </p>
         </div>
         <div class="classSvgArea">
-          <img id="classSvg" src="./assets/present.svg" />
+          <img id="classSvg" src="./assets/svg/present.svg" />
         </div>
       </div>
     </div>
