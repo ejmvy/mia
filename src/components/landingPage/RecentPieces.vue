@@ -4,12 +4,9 @@
     <div class="displayArtwork">
       <div v-for="img in imagesToDisplay" :key="img">
         <div class="artBox" :class="{smallBox : !showBtn}">
-          <!-- <img class="artwork" :src="require('@/assets/mainShots/' + img + '')" /> -->
-          <img class="artwork" :src="require(`../../assets/mainShots/${img}`)" ; />
+          <img class="artwork" :src="require(`../../assets/${img}`)" />
         </div>
       </div>
-      <!-- <img class="artwork" src="../../assets/mainShots/hex1.png" /> -->
-      <img class="artwork" :src="mainImage" />
     </div>
     <div v-if="showBtn" class="commissionQ">
       <h3>{{ questionText }}</h3>
@@ -29,17 +26,16 @@ export default {
   ],
   data() {
     return {
-      imageArray: [
-        "../../assets/mainShots/hex2.png",
-        "../../assets/mainShots/blue1.png",
-        "../../assets/mainShots/circle4.png",
-        "../../assets/mainShots/rect1.jpeg",
-        "../../assets/mainShots/circle2.png",
-        "../../assets/mainShots/rect1.png",
-        "../../assets/mainShots/hex1.png",
-        "https://i.ibb.co/yB8PpLM/gifgit-1.png"
-      ],
-      mainImage: require("../../assets/mainShots/circle2.png")
+      // imageArray: [
+      //   "../../assets/mainShots/hex2.png",
+      //   "../../assets/mainShots/blue1.png",
+      //   "../../assets/mainShots/circle4.png",
+      //   "../../assets/mainShots/rect1.jpeg",
+      //   "../../assets/mainShots/circle2.png",
+      //   "../../assets/mainShots/rect1.jpeg",
+      //   "../../assets/mainShots/hex1.png",
+      //   "https://i.ibb.co/yB8PpLM/gifgit-1.png"
+      // ]
     };
   },
   computed: {
@@ -79,10 +75,11 @@ export default {
 }
 
 #recentSection .displayArtwork .artBox {
-  -webkit-box-shadow: 0 5px 20px #ccc;
-  box-shadow: 0 5px 20px #ccc;
+  /* -webkit-box-shadow: 0 5px 20px #ccc; */
+  /* box-shadow: 0 5px 20px #ccc; */
   border-radius: 10px;
   width: 300px;
+  height: 250px;
   -webkit-transition: all 0.8s ease;
   transition: all 0.8s ease;
   margin: 20px;
@@ -90,6 +87,7 @@ export default {
 
 #recentSection .displayArtwork .artBox .artwork {
   width: 100%;
+  height: 250px;
 }
 
 #recentSection .displayArtwork .artBox:hover {
@@ -99,6 +97,7 @@ export default {
 
 #recentSection .displayArtwork .smallBox {
   width: 250px;
+  /* height: 300px; */
 }
 
 .commissionQ {
@@ -117,7 +116,8 @@ export default {
     margin-bottom: -10px;
   }
   #recentSection .displayArtwork .artBox .artwork {
-    height: 95%;
+    /* height: 95%; */
+    height: 300px;
   }
 }
 </style>

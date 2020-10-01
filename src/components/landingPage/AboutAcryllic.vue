@@ -18,7 +18,7 @@
       </div>
       <div class="animateUp bounceUp">
         <div class="threeHexes">
-          <img class="hexImage" :src="pageImg" />
+          <img class="hexImage" :src="require(`../../assets/${pageImg}`)" />
         </div>
       </div>
     </div>
@@ -82,6 +82,7 @@ export default {
 
 #aboutAcrillic .aboutAcrillicSection .threeHexes .hexImage {
   max-height: 450px;
+  transform: rotate(-2deg);
 }
 
 @media (max-width: 1250px) {

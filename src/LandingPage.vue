@@ -47,7 +47,7 @@ export default {
           "Acryllic Pouring is relatively new as a medium to work with, but has recently exploded in popularity. The art form itself is incredibly calming and even hypnotic at times, and more enjoyably - it's not a terribly difficult technique to learn. There are some challenges in getting the preparation right, mixing the paints with the chemicals and getting precisely the same consistency and fluidity across all your colours however the paint process is nothing but enjoyable! Learning these techniques takes a little bit of time but with a bit of patience and interest, should yield some very satisfying results!",
         aboutParagraph2:
           "Therapeutic and soothing are two words that are inextricably linked with this amazing art form.",
-        aboutImg: "https://i.ibb.co/q9cjMTT/imageedit-24-7966020525.png"
+        aboutImg: "mainHex.png"
       },
       midBlue: {
         quote:
@@ -65,34 +65,15 @@ export default {
       recent: {
         title: "Recent Pieces",
         images: [
-          "hex2.png",
-          "blue1.png",
-          "circle4.png",
-          "rect1.jpeg",
-          "circle2.png",
-          "rect1.png",
-          "hex1.png"
+          "mainShots/hex2.png",
+          "mainShots/blue1.png",
+          "mainShots/circle4.png",
+          "mainShots/rect3.png",
+          "mainShots/circle2.png",
+          "mainShots/hex1.png",
+          "mainShots/rect4.png",
+          "mainShots/circle3.png"
         ],
-        // images: [
-        //   "../../assets/mainShots/hex2.png",
-        //   "../../assets/mainShots/blue1.png",
-        //   "../../assets/mainShots/circle4.png",
-        //   "../../assets/mainShots/rect1.png",
-        //   "../../assets/mainShots/circle2.png",
-        //   "../../assets/mainShots/rect1.png",
-        //   "../../assets/mainShots/hex1.png",
-        //   "https://i.ibb.co/yB8PpLM/gifgit-1.png"
-        // ],
-        // images: [
-        //   "https://i.ibb.co/yB8PpLM/gifgit-1.png",
-        //   "https://i.ibb.co/yB8PpLM/gifgit-1.png",
-        //   "https://i.ibb.co/yB8PpLM/gifgit-1.png",
-        //   "https://i.ibb.co/yB8PpLM/gifgit-1.png",
-        //   "https://i.ibb.co/yB8PpLM/gifgit-1.png",
-        //   "https://i.ibb.co/yB8PpLM/gifgit-1.png",
-        //   "https://i.ibb.co/yB8PpLM/gifgit-1.png",
-        //   "https://i.ibb.co/yB8PpLM/gifgit-1.png"
-        // ],
         question: "Have someone special you'd like to commission a piece for?",
         buttonText: "More Details",
         showButton: true
