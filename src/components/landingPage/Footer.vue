@@ -51,8 +51,8 @@ footer {
   -ms-flex-align: center;
   align-items: center;
   color: white;
-
-  padding: 10px;
+  /* border: 2px solid red; */
+  padding-top: 10px;
 }
 
 footer .footerArea .icons {
@@ -76,14 +76,15 @@ footer .footerArea .icons .circleArea {
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  padding: 5px 20px 0 20px;
+  /* padding: 5px 20px 0 20px; */
   text-align: center;
+  /* border: 2px solid yellow; */
 }
 
 footer .footerArea .icons .circleArea .circle {
-  width: 50px;
-  height: 50px;
-  background: #30d5c8;
+  width: 45px;
+  height: 45px;
+  /* background: #30d5c8; */
   border-radius: 50%;
   color: white;
   display: -webkit-box;
@@ -99,13 +100,14 @@ footer .footerArea .icons .circleArea .circle {
 }
 
 footer .footerArea .icons .circleArea .circle:hover {
-  background: #7852a9;
+  /* background: #7852a9; */
+  background: #30d5c8;
   transform: scale(1.05);
 }
 
 footer .footerArea .icons .circleArea .circle .circleImg {
   position: relative;
-  top: 20%;
+  top: 15%;
   width: 30px;
   height: 30px;
   font-size: 50px;

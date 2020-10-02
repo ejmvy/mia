@@ -68,10 +68,10 @@ export default {
       recent: {
         title: "Recent Pieces by our Students",
         images: [
-          "https://i.ibb.co/yB8PpLM/gifgit-1.png",
-          "https://i.ibb.co/yB8PpLM/gifgit-1.png",
-          "https://i.ibb.co/yB8PpLM/gifgit-1.png",
-          "https://i.ibb.co/yB8PpLM/gifgit-1.png"
+          "zoomShots/blueZoom5.jpeg",
+          "zoomShots/pinkZoom1.jpeg",
+          "zoomShots/purpleZoom5.jpeg",
+          "zoomShots/blueZoom2.jpeg"
         ],
         question: "Have any questions about our classes?",
         buttonText: "Contact me",

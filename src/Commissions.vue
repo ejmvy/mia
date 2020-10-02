@@ -115,7 +115,7 @@
 
     <div class="commissionPieceArea">
       <div v-for="piece in commissionPieces" :key="piece">
-        <img class="commissionPieceArt" :src="piece" />
+        <img class="commissionPieceArt" :src="require(`./assets/zoomShots/${piece}`)" />
       </div>
     </div>
 
@@ -149,11 +149,12 @@ export default {
         pageMessage:
           "There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable. If you are going to use a passage of Lorem Ipsum, you need to be sure there isn't anything embarrassing hidden."
       },
+      // commissionPieces: ["hex2.png", "circle2.png", "rect3.png", "circle4.png"]
       commissionPieces: [
-        "https://i.ibb.co/yB8PpLM/gifgit-1.png",
-        "https://i.ibb.co/yB8PpLM/gifgit-1.png",
-        "https://i.ibb.co/yB8PpLM/gifgit-1.png",
-        "https://i.ibb.co/yB8PpLM/gifgit-1.png"
+        "blueZoom3.jpeg",
+        "pinkZoom1.jpeg",
+        "purpleZoom4.jpeg",
+        "blueZoom2.jpeg"
       ]
     };
   },
@@ -311,12 +312,12 @@ b {
   width: 100%;
   display: flex !important;
   justify-content: space-around;
-  padding: 20px 0;
+  padding: 40px 0;
 }
 
 .commissionPieceArea .commissionPieceArt {
-  width: 200px;
-  height: 200px;
+  width: 180px;
+  height: 180px;
 }
 
 @media (max-width: 900px) {
